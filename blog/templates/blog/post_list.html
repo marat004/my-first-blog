@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Marat Blog</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
 </head>
 
@@ -20,6 +23,18 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
+            <address>
+      <strong>Lab 518</strong><br>
+      Susar 8, <br>
+      Kaskelen, Kazakhstan<br>
+      <abbr title="Phone">Phone</abbr> +77028866675<br>
+      <abbr title="Telegram">Telegram</abbr> @maratyerken
+        </address>
+
+         <address>
+      <strong>Marat<strong><br>
+      <a href="mailto:#">marat@lab518.com</a>
+         </address>
         </body>
 </html>
 
